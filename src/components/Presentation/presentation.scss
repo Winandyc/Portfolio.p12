@@ -1,0 +1,29 @@
+.presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    &__image img {
+      width: 200px;
+      height: auto;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    &__text {
+      flex: 1;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #ffffff;
+    }
+  }
