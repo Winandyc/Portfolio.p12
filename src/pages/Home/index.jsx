@@ -1,8 +1,9 @@
 import React from 'react';
+import Header from '../../components/Header';
 import Presentation from '../../components/Presentation';
 import Skills from '../../components/Skills';
+import Projects from '../../components/Projects';
 import Contact from '../../components/Contact';
-import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
 import './style.scss';
@@ -19,6 +20,7 @@ const Home = () => {
       <Header />
       <Presentation />
       <Skills />
+      <Projects />
       <Contact />
       <Footer />
     </div>

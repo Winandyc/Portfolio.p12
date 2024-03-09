@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 import './style.scss';
 
@@ -15,12 +13,13 @@ const About = () => {
     return (
         <div className="about">
             <Link to="/" className="go-back" onClick={handleGoBack}>
-                <FontAwesomeIcon icon={faArrowLeft} />
+                <i class="fas fa-home"></i> {/* Icone de la maison à revoir */}
             </Link>
+
             <h1>À propos de moi</h1>
             <div className="about__content">
                 <div className="about__details">
-                    <img src="/src/assets/images/moi.jpg" alt="Selfie de Winandy Christopher" />
+                    <img src="/src/assets/images/moi2.jpg" alt="Selfie de Winandy Christopher" />
                     <p>
                         Bienvenue sur mon portfolio ! Je suis Winandy Christopher, un jeune développeur web FrontEnd tout juste
                         diplômé de la formation "Intégrateur Web" dispensée par OpenClassRooms. Passionné par la création d'expériences

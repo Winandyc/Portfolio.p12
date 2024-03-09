@@ -2,12 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 70px;
+  margin: 80px 70px 0;
 
   &__image img {
-    width: 200px; // Taille de base de l'image
+    width: 220px; // Taille de base de l'image
     height: auto;
-    border-radius: 50%;
+    border-radius: 80%;
     margin-right: 20px;
   }
 
@@ -16,31 +16,29 @@
   }
 
   h2 {
-    font-size: 24px;
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 20px;
   }
 
   p {
-    font-size: 18px;
-    color: #ffffff;
+    color: whitesmoke;
   }
 
   @media screen and (max-width: 768px) {
-    flex-direction: column; // Passe à la disposition verticale
+    flex-direction: column;
 
     &__image {
       order: 2; // Met l'image après le texte
-      text-align: center; // Centre l'image
-      margin-bottom: 20px; // Ajoute un espacement entre l'image et le texte
+      text-align: center;
+      margin-bottom: 20px;
       margin-top: 30px;
     }
 
     &__image img {
-      width: 100%; // Utilise la largeur totale disponible pour l'image
-      max-width: 200px; // Limite la largeur de l'image à 200px
-      height: auto; // Ajustement automatique de la hauteur
+      width: 100%;
+      max-width: 200px;
+      height: auto;
     }
 
     &__text {

@@ -13,7 +13,7 @@
 
     &:hover {
       font-weight: bold;
-      font-size: 18px;
+      font-size: 28px;
       color: white;
     }
 
@@ -27,6 +27,7 @@
     margin-top: 55px;
     display: flex;
     justify-content: center;
+    font-weight: bold;
     color: white;
     white-space: nowrap;
   }
@@ -47,9 +48,9 @@
       }
 
       p {
-        font-size: 18px;
         line-height: 1.5;
-        color: white;
+        font-weight: 500;
+        color: whitesmoke;
         flex: 1;
       }
     }
@@ -59,7 +60,7 @@
     .about__content {
       .about__details img {
         width: calc(15vw + 50px); // Taille d'image réduite pour les écrans moyens
-        height: auto; // Ajustement automatique de la hauteur
+        height: auto;
       }
     }
   }
@@ -68,7 +69,24 @@
     .about__content {
       .about__details img {
         width: calc(10vw + 50px); // Taille d'image réduite pour les petits écrans
-        height: auto; // Ajustement automatique de la hauteur
+        height: auto;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .about__content {
+      .about__details {
+        flex-direction: column; // Met les détails en colonne
+
+        img {
+          order: 2; // Passe l'image après le texte
+          margin-top: 30px;
+        }
+
+        p {
+          order: 1; // Passe le texte avant l'image
+        }
       }
     }
   }
