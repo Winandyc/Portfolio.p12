@@ -1,0 +1,36 @@
+.skills {
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .skills__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skills__category {
+    flex: 1;
+    margin-right: 20px;
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        font-size: 18px;
+        margin-bottom: 5px;
+
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
