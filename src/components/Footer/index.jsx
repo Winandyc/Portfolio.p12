@@ -5,22 +5,44 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer__content">
-                <div className="footer__social">
-                    {/* Liens vers les réseaux sociaux */}
-                    <a href="https://www.linkedin.com/in/christopher-winandy-7283032a3/" target="_blank" rel="noopener noreferrer">
-                        <i className="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/Winandyc" target="_blank" rel="noopener noreferrer">
-                        <i className="fab fa-github"></i>
-                    </a>
+                {/* Image */}
+                <div className="footer__image">
+                    <img src="/src/assets/images/footer/footer.img.jpg" alt="" />
                 </div>
-                <div className="footer__contact">
-                    {/* Coordonnées de contact */}
-                    <p>Contactez-moi : winandydev@gmail.com</p>
+                {/* Logos LinkedIn et Github */}
+                <div className="footer__social">
+                    <h4>Retrouvez moi ici, aussi !</h4>
+                    <div className="footer__social-icons">
+                        <a href="https://www.linkedin.com/in/christopher-winandy-7283032a3/" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Winandyc" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                {/* Projets */}
+                <div className="footer__projects">
+                    <h4>Projets</h4>
+                    <ul>
+                        <li><a href="lien_vers_argent_bank">Argent Bank</a></li>
+                        <li><a href="lien_vers_kasa">Kasa</a></li>
+                        <li><a href="lien_vers_sophie_bluel">Sophie Bluel</a></li>
+                    </ul>
+                </div>
+                {/* Navigation */}
+                <div className="footer__explore">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#a_propos">A propos</a></li>
+                        <li><a href="#competences">Mes compétences</a></li>
+                        <li><a href="#projets">Mes projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
             </div>
             <div className="footer__copyright">
-                {/* Copyright et mentions légales */}
                 <p>&copy; 2024 Winandy Christopher. Tous droits réservés.</p>
             </div>
         </footer>

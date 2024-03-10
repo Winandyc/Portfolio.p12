@@ -1,34 +1,119 @@
 .footer {
-    color: #fff;
-    padding: 20px 0;
+  background-color: rgba(158, 158, 158, 0.2);
+  padding: 20px 0 5px;
 
-    .footer__content {
-      max-width: 1200px;
-      margin: 0 auto;
+  .footer__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    .footer__image {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
+      height: 100px;
+    }
+
+    .footer__image img {
+      border-radius: 50%;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      image-rendering: pixelated; // Rend l'image plus nette
+      border: 2px solid #d6d6d6;
     }
 
     .footer__social {
-      display: flex;
-      gap: 20px;
-
-      a {
-        color: #fff;
-        font-size: 24px;
-        text-decoration: none;
-      }
-    }
-
-    .footer__contact {
-      p {
-        font-size: 16px;
-      }
-    }
-
-    .footer__copyright {
       text-align: center;
-      margin-top: 20px;
+
+      h4 {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .footer__social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        a {
+          color: #fff;
+          font-size: 24px;
+          text-decoration: none;
+          position: relative;
+          transition:
+            transform 0.3s,
+            filter 0.3s; // Ajout d'une transition pour une animation fluide
+
+          &:hover {
+            transform: scale(1.2); // Zoom sur le lien lorsqu'il est survolé
+            filter: brightness(150%); // Augmentation de la luminosité du lien lorsqu'il est survolé
+          }
+        }
+      }
+    }
+
+    .footer__projects,
+    .footer__explore {
+      text-align: center;
+
+      h4 {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 20px;
+
+        li {
+          margin-bottom: 15px;
+
+          a {
+            text-decoration: none;
+            color: #d6d6d6;
+            font-weight: 400;
+            position: relative;
+            transition:
+              transform 0.3s,
+              filter 0.3s;
+
+            &:hover {
+              filter: brightness(200%); // Augmentation de la luminosité du lien lorsqu'il est survolé
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 520px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+
+      .footer__social,
+      .footer__projects,
+      .footer__explore {
+        width: 100%;
+        margin-bottom: 20px;
+      }
     }
   }
+
+  .footer__copyright {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+
+    p {
+      font-size: 18px;
+    }
+  }
+}

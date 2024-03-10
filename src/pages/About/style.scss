@@ -50,7 +50,7 @@
       p {
         line-height: 1.5;
         font-weight: 500;
-        color: whitesmoke;
+        color: #d6d6d6;
         flex: 1;
       }
     }
@@ -74,10 +74,10 @@
     }
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 520px) {
     .about__content {
       .about__details {
-        flex-direction: column; // Met les détails en colonne
+        flex-direction: column;
 
         img {
           order: 2; // Passe l'image après le texte

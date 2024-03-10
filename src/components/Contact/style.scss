@@ -1,28 +1,96 @@
 .contact {
-    h2 {
-      font-size: 24px;
-      margin-bottom: 20px;
+  // styles spécifiques au composant contact
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+
+  &__form {
+    // styles du formulaire
+    display: grid;
+    gap: 10px;
+    max-width: 500px;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 150px;
+  }
+
+  &__form-row {
+    // styles pour la disposition en ligne des champs prénom et nom de famille
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+
+  &__form-group {
+    // styles du groupe de champs de formulaire
+    label {
+      // styles des étiquettes
+      display: block;
+      margin-bottom: 5px;
     }
 
-    .contact__links {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
+    input,
+    textarea {
+      // styles des champs de saisie et des zones de texte
+      padding: 15px 25px;
+      font-size: 1.4rem;
+      border-radius: 12px;
+      border: 1px solid #ccc;
+      width: 100%;
+      max-width: 500px; // largeur maximale de 500px
+      box-sizing: border-box; // inclure le padding et la bordure dans la largeur
+      margin-top: 5px; // ajout de l'espace entre les champs
+    }
 
-      a {
-        display: flex;
-        align-items: center;
-        color: #333;
-        text-decoration: none;
-        font-size: 18px;
+    textarea {
+      // styles spécifiques à la zone de texte
+      min-height: 100px;
+    }
+  }
 
-        i {
-          margin-right: 10px;
-        }
+  &__button {
+    // styles du bouton Envoyer
+    padding: 15px 25px;
+    font-size: 1.4rem;
+    border-radius: 12px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 
-        &:hover {
-          color: #007bff;
-        }
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); // semi-transparent
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; // assure que la modale est au-dessus de tout le reste
+  }
+
+  .modal__content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  @media (max-width: 520px) {
+    .contact {
+      &__form-row {
+        flex-direction: column;
       }
     }
   }
+}

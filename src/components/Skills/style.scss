@@ -1,9 +1,7 @@
 .skills {
     margin-top: 100px;
-    color: white;
 
     .skills__title {
-        font-weight: bold;
         margin-left: 20px;
         display: flex;
         justify-content: center;
@@ -17,12 +15,13 @@
         .skills__category {
             width: 25%;
             padding: 20px;
-            background-color: rgb(67, 66, 66, 0.2);
+            background-color: rgba(158, 158, 158, 0.2);
             border-radius: 10px;
 
             h3 {
                 display: grid;
                 justify-content: center;
+                color: white;
                 font-weight: bold;
                 font-size: 28px;
                 margin-bottom: 18px;
@@ -37,12 +36,28 @@
                     display: flex;
                     align-items: center;
                     gap: 10px;
-                    color: whitesmoke;
+                    color: #d6d6d6;
+                    cursor: pointer;
 
                     i {
                         margin-right: 5px;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .skills {
+        .skills__list {
+            flex-direction: column;
+            display: grid;
+            justify-content: center;
+
+            .skills__category {
+                width: 100%;
+                margin-bottom: 20px;
             }
         }
     }

@@ -1,74 +1,15 @@
 .projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
+  margin-top: 150px;
 
-    .projects__circle {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 500px; /* Ajustez la taille du cercle selon vos besoins */
-      height: 500px; /* Ajustez la taille du cercle selon vos besoins */
-      border-radius: 50%;
-      background-color: rgba(255, 255, 255, 0.1); /* Couleur de fond du cercle */
-      margin-bottom: 50px;
-
-      .project {
-        position: absolute;
-        transform-origin: center;
-        transform: rotate(calc(360deg / 6 * (var(--i) - 1))) translateY(-250px); /* Répartit les projets uniformément en cercle */
-        transition: transform 0.5s ease;
-
-        img {
-          width: 100px; /* Ajustez la taille des images selon vos besoins */
-          height: 100px; /* Ajustez la taille des images selon vos besoins */
-          border-radius: 50%;
-          margin-bottom: 10px;
-        }
-
-        h3 {
-          font-size: 16px; /* Ajustez la taille de la police selon vos besoins */
-          color: white;
-          text-align: center;
-        }
-      }
-
-      .project:hover {
-        transform: rotate(calc(360deg / 6 * (var(--i) - 1))) translateY(-200px) scale(1.2); /* Effet de zoom sur hover */
-      }
-
-      .project:nth-child(1) {
-        --i: 1;
-      }
-      .project:nth-child(2) {
-        --i: 2;
-      }
-      .project:nth-child(3) {
-        --i: 3;
-      }
-      .project:nth-child(4) {
-        --i: 4;
-      }
-      .project:nth-child(5) {
-        --i: 5;
-      }
-      .project:nth-child(6) {
-        --i: 6;
-      }
-    }
-
-    .projects__all {
-      font-size: 18px; /* Ajustez la taille de la police selon vos besoins */
-      color: white;
-
-      a {
-        text-decoration: none;
-        transition: color 0.3s ease;
-
-        &:hover {
-          color: rgba(255, 255, 255, 0.7); /* Couleur de survol pour le lien "Tous mes projets" */
-        }
-      }
-    }
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
   }
+
+  .canvas {
+    border: 4px solid white;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+}
