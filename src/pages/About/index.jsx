@@ -6,14 +6,13 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 import './style.scss';
 
 const About = () => {
-    // Définir la fonction handleGoBack
     const handleGoBack = () => {
         // Redirection vers la page d'accueil lorsque la flèche est cliquée
         window.location.href = '/';
     };
 
     return (
-        <div className="about">
+        <div id="about" className="about">
             <Link to="/" className="go-back" onClick={handleGoBack}>
                 <FontAwesomeIcon icon={faHome} />
             </Link>

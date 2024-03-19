@@ -68,7 +68,7 @@ const Projects = () => {
     };
 
     return (
-        <div className='myProjects'>
+        <div id="projects" className='myProjects'>
             <h2>Mes projets</h2>
             <div className="projects-container">
                 {showAllProjects ? projectsData.map((project, index) => (

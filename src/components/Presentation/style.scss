@@ -1,46 +1,60 @@
 .presentation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin: 80px 70px 0;
 
-  &__image img {
-    width: 220px; // Taille de base de l'image
-    height: auto;
-    border-radius: 80%;
-    margin-right: 20px;
-  }
+  .presentation__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 
-  &__text {
-    flex: 1;
-  }
-
-  h2 {
-    margin-bottom: 20px;
-  }
-
-  p {
-    color: whitesmoke;
-  }
-
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-
-    &__image {
-      order: 2; // Met l'image après le texte
-      text-align: center;
-      margin-bottom: 20px;
-      margin-top: 30px;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
     }
 
-    &__image img {
-      width: 100%;
-      max-width: 200px;
-      height: auto;
+    .presentation__image {
+      img {
+        width: 220px;
+        height: auto;
+        border-radius: 80%;
+        margin-right: 20px;
+
+        @media screen and (max-width: 767px) {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+      }
     }
 
-    &__text {
-      order: 1; // Met le texte avant l'image
+    .presentation__text {
+      flex: 1;
+
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: whitesmoke;
+      }
+
+      .download-cv {
+        margin-top: 40px;
+        color: white;
+
+        .download-button {
+          background-color: rgba(158, 158, 158, 0.2);
+          color: #ffffff;
+          border: none;
+          border-radius: 20px;
+          padding: 10px 20px;
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+
+          .fa-download {
+            margin-right: 5px;
+          }
+        }
+      }
     }
   }
 }

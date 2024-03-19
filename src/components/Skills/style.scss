@@ -5,6 +5,10 @@
         margin-left: 20px;
         display: flex;
         justify-content: center;
+
+        @media screen and (max-width: 520px) {
+            text-align: center;
+        }
     }
 
     .skills__list {
@@ -46,18 +50,20 @@
             }
         }
     }
-}
 
-@media (max-width: 520px) {
-    .skills {
+    @media (max-width: 767px) {
+        .skills__category {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (max-width: 520px) {
         .skills__list {
             flex-direction: column;
-            display: grid;
-            justify-content: center;
-
+            align-items: center;
             .skills__category {
-                width: 100%;
-                margin-bottom: 20px;
+                width: 80%;
             }
         }
     }
