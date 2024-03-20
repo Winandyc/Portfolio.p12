@@ -80,7 +80,6 @@ const Projects = () => {
                 {projectsData.map((project, index) => (
                     <div className="project" key={index} onClick={() => openModal(project)} data-description={project.description}>
                         <img src={project.image} alt={project.name} />
-                        <h3>{project.name}</h3>
                     </div>
                 ))}
             </div>
@@ -88,7 +87,7 @@ const Projects = () => {
                 <div className="modal">
                     <div className="modal-content" ref={modalRef}>
                         <span className="close" onClick={closeModal}>&times;</span>
-                        <h2>{selectedProject.name}</h2>
+                        <h3>{selectedProject.name}</h3>
                         <p>{selectedProject.description}</p>
                         <div className="buttons-container">
                             <a href={selectedProject.github} target="_blank" rel="noopener noreferrer" className={`github-button custom-background${selectedProject.name === "Booki" ? " left-align" : ""}`}>GitHub</a>

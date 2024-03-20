@@ -5,7 +5,6 @@
   margin-top: 100px;
 
   &__form {
-    // styles du formulaire
     display: grid;
     gap: 10px;
     max-width: 500px;
@@ -15,7 +14,6 @@
   }
 
   &__form-row {
-    // styles pour la disposition en ligne des champs prénom et nom de famille
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
@@ -23,16 +21,13 @@
   }
 
   &__form-group {
-    // styles du groupe de champs de formulaire
     label {
-      // styles des étiquettes
       display: block;
       margin-bottom: 5px;
     }
 
     input,
     textarea {
-      // styles des champs de saisie et des zones de texte
       padding: 15px 25px;
       font-size: 1.4rem;
       border-radius: 12px;
@@ -44,13 +39,11 @@
     }
 
     textarea {
-      // styles spécifiques à la zone de texte
       min-height: 100px;
     }
   }
 
   &__button {
-    // styles du bouton Envoyer
     padding: 15px 25px;
     font-size: 1.4rem;
     border-radius: 12px;
@@ -71,11 +64,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); // semi-transparent
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 999; // assure que la modale est au-dessus de tout le reste
+    z-index: 999;
   }
 
   .modal__content {
@@ -85,11 +78,19 @@
     text-align: center;
   }
 
-  @media (max-width: 520px) {
-    .contact {
-      &__form-row {
-        flex-direction: column;
-      }
+  @media (max-width: 767px) {
+    .contact__form-row {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 420px) {
+    h2 {
+      font-size: 40px;
+    }
+
+    .contact__form {
+      width: 95%;
     }
   }
 }

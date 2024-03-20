@@ -27,9 +27,9 @@ const Footer = () => {
                 <div className="footer__projects">
                     <h4>Projets</h4>
                     <ul>
-                        <li><a href="lien_vers_argent_bank">Argent Bank</a></li>
-                        <li><a href="lien_vers_kasa">Kasa</a></li>
-                        <li><a href="lien_vers_sophie_bluel">Sophie Bluel</a></li>
+                        <li><a href="https://github.com/Winandyc/ArgentBank.p11">Argent Bank</a></li>
+                        <li><a href="https://github.com/Winandyc/Kasa.p8">Kasa</a></li>
+                        <li><a href="https://github.com/Winandyc/Sophie-Bluel.p6">Sophie Bluel</a></li>
                     </ul>
                 </div>
                 {/* Navigation */}
