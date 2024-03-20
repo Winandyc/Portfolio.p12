@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../../components/Header';
-import Presentation from '../../components/Presentation';
-import Skills from '../../components/Skills';
-import Projects from '../../components/Projects';
-import Contact from '../../components/Contact';
-import Footer from '../../components/Footer';
+import Header from '../../components/Header/index.jsx';
+import Presentation from '../../components/Presentation/index.jsx';
+import Skills from '../../components/Skills/index.jsx';
+import Projects from '../../components/Projects/index.jsx';
+import Contact from '../../components/Contact/index.jsx';
+import Footer from '../../components/Footer/index.jsx';
 
 /*
  * @brief : Composant Home qui représente la page d'accueil.
