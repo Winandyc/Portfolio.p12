@@ -33,7 +33,7 @@ const About = () => {
                         <br />
                         <br />
                         En dehors du développement web, mes passions incluent le sport et les jeux vidéos. Je trouve aussi toujours du temps pour
-                        m'investir dans des projets créatifs et stimulants.
+                        m'investir dans des projets créatifs et stimulants en rapport avec le développement Web.
                     </p>
                 </div>
             </div>

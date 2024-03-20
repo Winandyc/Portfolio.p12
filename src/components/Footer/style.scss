@@ -50,8 +50,7 @@
             filter 0.3s; // Ajout d'une transition pour une animation fluide
 
           &:hover {
-            transform: scale(1.2); // Zoom sur le lien lorsqu'il est survolé
-            filter: brightness(150%); // Augmentation de la luminosité du lien lorsqu'il est survolé
+            font-weight: bold;
           }
         }
       }

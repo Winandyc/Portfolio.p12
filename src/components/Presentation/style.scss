@@ -49,6 +49,15 @@
           text-decoration: none;
           display: inline-flex;
           align-items: center;
+          transition:
+            color 0.3s,
+            box-shadow 0.3s;
+
+          &:hover {
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+          }
 
           .fa-download {
             margin-right: 5px;
