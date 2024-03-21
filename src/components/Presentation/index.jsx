@@ -7,7 +7,7 @@ const Presentation = () => {
         <div className="presentation">
             <div className="presentation__content">
                 <div className="presentation__image">
-                    <img src="/src/assets/images/me/me.home.webp" alt="Selfie de Winandy Christopher" />
+                    <img src={import.meta.env.VITE_PREFIX + "images/me/me.home.webp"} alt="Selfie de Winandy Christopher" />
                 </div>
                 <div className="presentation__text">
                     <h2>Bienvenue sur mon portfolio !</h2>
